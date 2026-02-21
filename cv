@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in Latex
+% Author: Nejla Mülayim CV - English Version (GEP Project Added)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% Color Definitions
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\bfseries\vspace{2pt}\raggedright\large}{}{0em}{}[\color{light-grey}{\titlerule[2pt]}\vspace{-4pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-1pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ 
+      \textit{#3} & {\color{dark-grey} \small #4}\\ 
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Nejla Mülayim} \\ \vspace{5pt}
+    \small \faPhone* \texttt{+90 539 116 61 42} $|$ \faEnvelope \hspace{2pt} \texttt{ntysoftware@gmail.com} $|$ \faGlobe \hspace{2pt} \href{https://webdesign-two-xi.vercel.app/}{\texttt{webdesign-two-xi.vercel.app}} \\ \vspace{2pt}
+    \faLinkedin \hspace{2pt} \texttt{linkedin.com/in/nejla-mulayim} $|$ \faGithub \hspace{2pt} \texttt{github.com/nejlamulayim11} $|$ \faInstagram \hspace{2pt} \texttt{@nejlacodes} \\ \vspace{2pt}
+    \faMapMarker* \hspace{2pt} \texttt{Gaziantep, Turkiye}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE \& PROGRAMS}
+  \resumeSubHeadingListStart
+    \resumeSubheading{SIBER VATAN}{Oct 2025 -- Present}{Cybersecurity Specialization Student}{}
+    \resumeItemListStart
+        \resumeItem{Undergoing hands-on training on Penetration Testing, Network Security, and Linux Administration.}
+    \resumeItemListEnd
+
+    \resumeSubheading{BADEX LTD}{Jan 2024 -- Feb 2024}{Full-Stack \& DevOps Engineer Intern}{}
+    \resumeItemListStart
+        \resumeItem{Streamlined deployment by \textbf{containerizing} legacy web applications using \textbf{Docker}.}
+        \resumeItem{Developed responsive UI/UX components and conducted system security maintenance.}
+    \resumeItemListEnd
+
+    \resumeSubheading{ARCH OF SIGMA}{June 2024 -- Aug 2024}{Product Development \& Design Intern}{}
+    \resumeItemListStart
+        \resumeItem{Engineered high-quality technical documentation and reports using \textbf{\LaTeX}.}
+        \resumeItem{Developed 3D models and structural prototypes using \textbf{Rhinozeros 3D} and \textbf{SketchUp}.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+    
+    \resumeProjectHeading{\textbf{Cybersecurity \& Network Defense} $|$ \emph{Python, C++, Network Security}}{}
+    \resumeItemListStart
+        \resumeItem{Developed Vulnerability Scanner, Log Analysis Tool, Firewall Simulation, and SHA-256 Hashing Analyzer.}
+        \resumeItem{Implemented SQL Injection and Brute Force simulations to practice secure coding and mitigation strategies.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Software Development \& Automations} $|$ \emph{C++, SQL, VB.NET}}{}
+    \resumeItemListStart
+        \resumeItem{Designed Car Rental Portal, Smart Library (CRUD), Restaurant Management, and OOP-based Banking System.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Web Technologies \& Portfolio} $|$ \emph{HTML, CSS, JS, WebSocket, REST API}}{}
+    \resumeItemListStart
+        \resumeItem{\textbf{GEP:} Developed a house rental web platform featuring dynamic listing and property management modules.}
+        \resumeItem{Developed Real-time WebSocket Chat, Weather API, and a Full-stack Task Tracker hosted on Vercel.}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------REFERENCES-----------
+\section{REFERENCES}
+\resumeSubHeadingListStart
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}l}
+      \textbf{Abdulhalim Korkut} & \textbf{Mehmet Kursat Ozdemir} & \textbf{Burak Genc} \\
+      \small Turkcell ICT Sr. Charging Eng. & \small THY Tech Sr. Software Dev. & \small Badex LTD Founder \\
+      \small \faLinkedin \hspace{2pt} LinkedIn / Corporate & \small \faEnvelope \hspace{2pt} mehmetkursatozdemir7@gmail.com & \small \faPhone* \hspace{2pt} +90 538 010 1101 \\
+    \end{tabular*}
+\resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{LEADERSHIP \& VOLUNTEERING}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Huawei Student Developers (HSD)}{2025 -- 2026}{Social Media Committee Head}{}
+    \resumeItemListStart
+        \resumeItem{Managing official Instagram/LinkedIn accounts and developing technical content strategies.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION & SKILLS-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading{European University of Lefke}{2022 -- Present}{B.S. Software Engineering}{Lefke, TRNC}
+  \resumeSubHeadingListEnd
+
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Programming:} C, C++, Python, Java, SQL, VB.NET, HTML, CSS, JavaScript \vspace{2pt} \\
+     \textbf{Tools:} Docker, \LaTeX, Figma, VS Code, Canva, Rhinozeros 3D, SketchUp \vspace{2pt} \\
+     \textbf{Cybersecurity:} Vulnerability Scanning, Network Analysis, Log Analysis, SQL Injection, Cryptography
+    }}
+ \end{itemize}
+
+\end{document}
