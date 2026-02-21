@@ -1,0 +1,166 @@
+%-------------------------
+% Resume in Latex
+% Hazırlayan: Nejla Mülayim CV - Türkçe Versiyon (GEP ve Tüm Detaylar)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% Renk Tanımlamaları
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\bfseries\vspace{2pt}\raggedright\large}{}{0em}{}[\color{light-grey}{\titlerule[2pt]}\vspace{-4pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-1pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ 
+      \textit{#3} & {\color{dark-grey} \small #4}\\ 
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+\begin{document}
+
+%----------BAŞLIK----------
+\begin{center}
+    \textbf{\Huge Nejla Mülayim} \\ \vspace{5pt}
+    \small \faPhone* \texttt{+90 539 116 61 42} $|$ \faEnvelope \hspace{2pt} \texttt{ntysoftware@gmail.com} $|$ \faGlobe \hspace{2pt} \href{https://webdesign-two-xi.vercel.app/}{\texttt{webdesign-two-xi.vercel.app}} \\ \vspace{2pt}
+    \faLinkedin \hspace{2pt} \texttt{linkedin.com/in/nejla-mulayim} $|$ \faGithub \hspace{2pt} \texttt{github.com/nejlamulayim11} $|$ \faInstagram \hspace{2pt} \texttt{@nejlacodes} \\ \vspace{2pt}
+    \faMapMarker* \hspace{2pt} \texttt{Gaziantep, Türkiye}
+\end{center}
+
+%-----------DENEYİM-----------
+\section{DENEYİM \& PROGRAMLAR}
+  \resumeSubHeadingListStart
+    \resumeSubheading{SİBER VATAN}{Ekim 2025 -- Devam}{Siber Güvenlik Uzmanlık Programı Öğrencisi}{}
+    \resumeItemListStart
+        \resumeItem{Sızma Testi, Ağ Güvenliği ve Linux Sistem Yönetimi üzerine yoğun uygulamalı teknik eğitim.}
+    \resumeItemListEnd
+
+    \resumeSubheading{BADEX LTD}{Ocak 2024 -- Şubat 2024}{Full-Stack \& DevOps Stajyer Mühendis}{}
+    \resumeItemListStart
+        \resumeItem{Mevcut web uygulamalarını \textbf{Docker} kullanarak konteynırlaştırıp dağıtım süreçleri optimize edildi.}
+        \resumeItem{Kullanıcı arayüzü (UI/UX) optimizasyonu ve responsive tasarım geliştirme süreçlerine katkı sağlandı.}
+        \resumeItem{Web modülleri için sistem bakım çalışmaları ve güvenlik yamaları uygulandı.}
+    \resumeItemListEnd
+
+    \resumeSubheading{ARCH OF SIGMA}{Haziran 2024 -- Ağustos 2024}{Ürün Geliştirme \& Tasarım Stajyer Mühendis}{}
+    \resumeItemListStart
+        \resumeItem{\textbf{\LaTeX} kullanarak profesyonel standartlarda teknik dokümantasyon ve mühendislik raporları hazırlandı.}
+        \resumeItem{\textbf{Rhinozeros 3D} ve \textbf{SketchUp} ile ürün Ar-Ge döngüsünü destekleyen karmaşık 3D modeller geliştirildi.}
+        \resumeItem{Dijital tasarımdan üretime geçişi optimize etmek için teknik iş akışı gereksinimleri analiz edildi.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJELER-----------
+\section{PROJELER}
+    \resumeSubHeadingListStart
+    
+    \resumeProjectHeading{\textbf{Siber Güvenlik ve Ağ Savunması} $|$ \emph{Python, C++, Ağ Güvenliği}}{}
+    \resumeItemListStart
+        \resumeItem{Zafiyet Tarayıcı, Log Analiz Aracı, Firewall Simülasyonu ve SHA-256 Hash Analizörü geliştirildi.}
+        \resumeItem{Güvenli kodlama ve savunma stratejileri üzerine SQL Injection ve Brute Force simülasyonları uygulandı.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Yazılım Geliştirme ve Otomasyon} $|$ \emph{C++, SQL, VB.NET}}{}
+    \resumeItemListStart
+        \resumeItem{Araç Kiralama Portalı, Akıllı Kütüphane (CRUD), Restoran Yönetimi ve OOP tabanlı Bankacılık Sistemi tasarlandı.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Web Teknolojileri ve Portfolyo} $|$ \emph{HTML, CSS, JS, WebSocket, REST API}}{}
+    \resumeItemListStart
+        \resumeItem{\textbf{GEP:} Dinamik ilan listeleme ve mülk yönetimi özelliklerine sahip kapsamlı bir ev kiralama web platformu geliştirildi.}
+        \resumeItem{Gerçek zamanlı WebSocket Sohbet uygulaması, Hava Durumu API'si ve Vercel üzerinde barındırılan Task Tracker geliştirildi.}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------REFERANSLAR-----------
+\section{REFERANSLAR}
+\resumeSubHeadingListStart
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}l}
+      \textbf{Abdülhalim Korkut} & \textbf{Mehmet Kürşat Özdemir} & \textbf{Burak Genç} \\
+      \small Turkcell ICT Sr. Charging Eng. & \small THY Teknoloji Sr. Software Dev. & \small Badex LTD Kurucu \\
+      \small \faLinkedin \hspace{2pt} LinkedIn / Kurumsal & \small \faEnvelope \hspace{2pt} mehmetkursatozdemir7@gmail.com & \small \faPhone* \hspace{2pt} +90 538 010 1101 \\
+    \end{tabular*}
+\resumeSubHeadingListEnd
+
+%-----------LİDERLİK-----------
+\section{LİDERLİK VE GÖNÜLLÜLÜK}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Huawei Student Developers (HSD)}{2025 -- 2026}{Sosyal Medya Komite Başkanı}{}
+    \resumeItemListStart
+        \resumeItem{Resmi Instagram ve LinkedIn hesaplarının yönetimi ve teknik içerik stratejilerinin geliştirilmesi sağlandı.}
+    \resumeItemListEnd
+    \resumeSubheading{Etkin Kampüs}{2023 -- Devam}{Üniversite Temsilcisi}{}
+  \resumeSubHeadingListEnd
+
+%-----------EĞİTİM & YETENEKLER-----------
+\section{EĞİTİM}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Lefke Avrupa Üniversitesi}{2022 -- Devam}{Yazılım Mühendisliği (Lisans)}{Lefke, KKTC}
+  \resumeSubHeadingListEnd
+
+\section{YETENEKLER}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Programlama:} C, C++, Python, Java, SQL, VB.NET, HTML, CSS, JavaScript \vspace{2pt} \\
+     \textbf{Araçlar:} Docker, \LaTeX, Figma, VS Code, Canva, Rhinozeros 3D, SketchUp \vspace{2pt} \\
+     \textbf{Siber Güvenlik:} Zafiyet Tarama, Ağ Analizi, Log Analizi, SQL Injection Savunma, Kriptografi
+    }}
+ \end{itemize}
+
+\end{document}
